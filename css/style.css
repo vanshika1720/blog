@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../image/jalmahal.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header h1 {
+  padding-top: 200px;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #74959A;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #F9D371;
+}
+
+.text-box h1 {
+  font-size: 50px;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #F9D371;
+  background: #F9D371;
+  transition: 1s;
+}
+
+nav .fas {
+  display: none;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+@media(max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    background: #74959A;
+    transition: 1s;
+  }
+
+  nav .fas {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    margin: 10px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    margin: 10px;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+.login-btn {
+  width: 100px;
+  padding: 8px 0;
+  outline: none !important;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background: transparent;
+  color: white;
+}
+
+.login-btn:hover {
+  border: 1px solid #74959A;
+  background: #74959A;
+  transition: 1s;
+}
+
+section .features h1 {
+  margin: 30px 0 20px 0;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 55px;
+}
+
+section .features p {
+  color: #777;
+  font-size: 14px;
+  paddiing: 10px;
+  font-weight: 300;
+  line-height: 22px;
+  word-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+section .features a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .5s ease;
+}
+
+.features {
+  padding: 100px 0;
+}
+
+section .features h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.feature-img img {
+  width: 100%;
+}
+
+.price {
+  width: 50px;
+  height: 50px;
+  background: #ff5722;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+  position: absolute;
+  bottom: -25px;
+  padding: 10px;
+  left: 20px;
+}
+
+.feature-img {
+  position: relative;
+}
+
+.rating {
+  padding: 3px;
+  float: right;
+  background: #fff;
+  right: 0;
+  bottom: -1px;
+  position: absolute;
+}
+
+.features .fa-solid {
+  font-size: 15px;
+  color: #ff5722;
+}
+
+.feature-details {
+  padding: 20px;
+  text-align: justify;
+}
+
+.feature-details h4 {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.feature-details .fa-solid {
+  margin-right: 5px;
+}
+
+.feature-box {
+  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+  margin-bottom: 30px;
+}
+
+.gallery {
+  padding: 100px 0;
+  background: #efefef;
+}
+
+.gallery-box img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.gallery-box img:hover {
+  transform: scale(1.1);
+}
+
+.gallery-box h4 {
+  font-size: 20px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  text-shadow: -2px 2px 2px #000;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.banner {
+  padding-top: 14%;
+  height: 80vh;
+  background-image: url(../image/pic3.jfif);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner-highlights {
+  padding: 70px 0;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+}
+
+.booking-btn {
+  width: 120px;
+  padding: 8px 0;
+  outline: none !important;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background: transparent;
+  color: white;
+  margin-top: 20px;
+  float: right;
+}
+
+.booking-btn:hover {
+  border: 1px solid #74959A;
+  background: #74959A;
+  transition: 1s;
+}
+
+.footer {
+  padding: 100px 20px 15px;
+  background-image: linear-gradient(#C0D8C0, #74959A);
+  color: white;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.footer h4 {
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.footer p {
+  font-size: 12px;
+  text-align: justify;
+  padding-right: 35px;
+}
+
+.footer .row .fa-solid {
+  padding-right: 20px;
+  font-size: 15px;
+}
+
+.footer .row .fa-brands {
+  padding-right: 20px;
+  font-size: 15px;
+}
+
+.footer-hr {
+  margin-top: 10px;
+  color:
+}
+
+.fa-heart {
+  margin: 0 5px;
+  color: #f44336;
+}
+
+.footer .copyright {
+  text-align: center;
+}
+
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../image/pic2.jfif);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
